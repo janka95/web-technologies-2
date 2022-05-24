@@ -1,0 +1,73 @@
+body {
+  background-image: url(img.jpg) ;
+  background-size: cover;
+  background-position:center;
+  height:720px;
+  margin: auto;
+  padding: 100px ;
+}
+
+.mat-title {
+  color: rgb(92, 92, 92);
+}
+
+.mat-toolbar{
+  top: 8px;
+  left:10px;
+  height: 64px;
+  position: absolute;
+  z-index: 100;
+  width: 99%;
+  background-color: rgb(139, 219, 206);
+  margin: auto;
+}
+
+.mat-toolbar-row{
+  justify-content: space-evenly;
+}
+
+
+input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.actbtn:hover {
+  background-color: rgb(26, 163, 255);
+  color: rgb(48, 48, 48);
+}
+
+.actbtn {
+  padding: 10px 40px 10px 40px;
+  width: max-content;
+  text-align: center;
+  color: white;
+  background-color: rgb(51, 182, 160);
+}
+
+.btn:hover {
+  background-color: white;
+  color: rgb(92, 92, 92);
+  border: 2px solid rgb(51, 182, 160);
+}
+
+.btn {
+  width: max-content;
+  text-align: bottom;
+  margin: 5px;
+  padding: 10px 40px 10px 40px;
+  color: white;
+  background-color: rgb(51, 182, 160);
+  border: 2px solid rgb(51, 182, 160);
+}
+
+.mat-card{
+  margin: 0 auto;
+  width: calc(100% - 1200px);
+  text-align: center;
+}

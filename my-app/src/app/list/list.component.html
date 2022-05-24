@@ -1,0 +1,29 @@
+<html>
+<body>
+<mat-toolbar >
+  <mat-toolbar-row>
+    <button mat-raised-button routerLinkActive="active"  routerLink="/add" class="actbtn" >Vissza</button>
+    <button mat-raised-button routerLinkActive="active" (click)=logout() class="actbtn" >Kijelentkezés</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+  <p class="title">Leltárban lévő könyvek</p>
+<br>
+  <table class="mat-elevation-z8">
+    <thead>
+    <tr>
+      <th>Könyv címe</th>
+      <th>Könyv írója</th>
+      <th>Kiadás éve</th>
+      <th>Könyv kiadója</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let book of Book">
+      <td>{{book.bookTitle}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.year}}</td>
+      <td>{{book.publisher}}</td>
+    </tr>
+  </table>
+</body>
+</html>
+

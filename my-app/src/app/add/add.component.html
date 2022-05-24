@@ -1,0 +1,33 @@
+<html>
+<body>
+<mat-toolbar >
+<mat-toolbar-row>
+  <button mat-raised-button routerLinkActive="active" routerLink="/list" class="actbtn" >Könyvek kilistázása</button>
+  <button mat-raised-button routerLinkActive="active" (click)=logout() class="actbtn" >Kijelentkezés</button>
+</mat-toolbar-row>
+</mat-toolbar>
+<br><br>
+<mat-card>
+  <mat-card-title class="mat-title"> Könyv hozzáadása leltárhoz</mat-card-title>
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form" >
+      <mat-form-field >
+        <input matInput type="text" placeholder="Könyv címe:" formControlName="bookTitle">
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput  placeholder="Könyv írója:" type="text"  formControlName="author">
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput  placeholder="Kiadás éve:" type="text" formControlName="year">
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+        <input matInput  placeholder="Könyv kiadója:" type="text"  formControlName="publisher">
+      </mat-form-field>
+      <br>
+      <button mat-raised-button type="submit"  class="btn" >Felvétel leltárba</button>
+    </form>
+  </mat-card>
+</body>
+</html>
